@@ -1,0 +1,495 @@
+/*=====Regras Gerais */
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: var(--fonte0);
+    background-color: var(--cor5);
+}
+:root {
+    --cor0:#041f49;
+    --cor1:#031331;
+    --cor2:#f4f2f3;
+    --cor3:#7d8491;
+    --cor4:#fe7f2d;
+    --cor5:white;
+    --fonte0:'Open Sans', sans-serif;
+}
+/*=====Final das regras gerais*/
+
+/*=====Formatações gerais*/
+/*Textos grandes com ênfase!!!*/
+em {
+    font-size: 1.4em;
+    color: var(--cor4);
+    font-style: normal;
+}
+
+/*Botão Saiba mais*/
+.saibamais {
+    padding: 5px 15px;
+    margin: 0px;
+    background-color: var(--cor4);
+    font-size: 1em;
+    margin-left:50px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--cor2);
+    font-weight: lighter;
+}
+/* Ação do botão saiba mais*/
+.saibamais:hover {
+    background-color: var(--cor0);
+}
+
+/*=====Final das formatações gerais*/
+
+/*=====Cabeçalho */
+header {
+    background:
+    linear-gradient(#041e49dc,rgba(255, 255, 255, 0.063)),
+    url(media/QLTS-6.jpg) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 975px;
+    box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.334);
+    
+}
+
+/*Logotipo branco no topo da página */
+.logo {
+    display: block;
+    padding: 50px 50px 20px 50px;
+    margin: 0px auto;
+}
+
+/*Menu de navegação*/
+nav {
+    text-align: center;
+    padding: 0px;
+}
+
+.menu {
+    font-size: 0.9em;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+.menu:hover {
+    color: var(--cor4);
+}
+
+/*Frase inicial */
+.textoinicio{
+    color: var(--cor2);
+    font-size: 2.5em;
+    padding: 200px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.136);   
+}
+
+/*=====Seção 1 do site */
+.sct_1 {
+    width: 100%;
+    height: 810px;
+    margin: 0px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*Subseção 1.1 = Caixa maior do lado esquerdo*/
+.ssct_11 {
+    width: 62.5%;
+    min-height: 810px;
+    display: inline-block;
+    text-align: justify;
+
+}
+
+/*Caixa 1 dentro da subseção 1.1*/
+.box_11{
+    padding: 50px 0px 0px 50px;
+    margin: 0px;
+}
+
+/*Configurações de texto específicas da subseção 1.1*/
+.box_11 h1 {
+    margin-top: 0px;
+    font-size: 1.5em;
+    letter-spacing: 7px;
+    color: var(--cor0)
+}
+
+.box_11 h2 {
+    margin-top: 0px;
+    font-size: 2em;
+    color: var(--cor3);
+}
+/*Caixa 2 dentro da subseção 1.1*/
+.box_12 {
+    padding-left: 10px;
+    padding-right:75px;
+    margin-left: 50px;
+    border-left: 1px solid var(--cor3);
+}
+
+/*Caixa menor do lado direito (imagem)*/
+.img_11 {
+    object-fit: cover;
+    width: 37.5%;
+    height: 810px;
+}
+
+/*=====Seção 2 do site*/
+.sct_2 {
+    width: 100%;
+    height: 750px;
+    background-color: var(--cor5);
+    margin: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    background-image: url(media/qualitas-simb-branco-h1000px.png);
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: center left -50px;
+    background-color: var(--cor2);
+}
+
+/*Subseção 2.1*/
+.ssct_21 {
+    width: 45%;
+    min-height: 810px;
+    display: inline-block;
+    text-align: justify;
+}
+
+.ssct_21 .people {
+    display: block;
+    margin-top: 77px;
+    margin-left: 193.5px;
+}
+
+/*Subseção 2.2*/
+.ssct_22 {
+    width: 55%;
+    min-height: 810px;
+    padding: 50px 25px;
+    display: inline-block;
+    text-align: justify;
+}
+
+/*Formatações específicas da subseção 2.2*/
+.ssct_22 h2 {
+    color: var(--cor4);
+    font-size: 2.3em;
+}
+
+.ssct_22 p {
+    color: var(--cor0);
+    font-size: 1.2em;
+}
+
+.ssct_22 ul {
+    color: var(--cor0);
+    font-size: 1.2em;
+    line-height: 40px;
+}
+
+.ssct_22 .missao {
+    color: var(--cor4);
+    font-size: 2.3em;
+    margin-top: 50px;
+}
+/*=====Final seção 2*/
+
+/*=====Seção 3 do site*/
+.sct_3 {
+    width: 100%;
+    height: 530px;
+    margin: 0px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*Subseção 3.1*/
+.ssct_31 {
+    width: 30%;
+    height: 600px;
+    display: inline-block;
+    margin: 0px;
+}
+/*Formatações específicas da seção 3.2 (aqui usei "em" da regra geral)*/
+.ssct_31 h2 {
+    margin: 100px;
+    font-size: 2.5em;
+}
+
+/*Subseção 3.2*/
+.ssct_32 {
+    width: 70%;
+    height: 600px;
+    padding: 100px 100px 50px 50px;
+    display: inline-block;
+    margin: 0px;
+}
+
+.ssct_32 p {
+    color: var(--cor3);
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+/*Grid*/
+.solucoes {
+    width: 100%;
+    min-height: 300px;
+    margin: auto auto 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 22px;
+}
+
+.sl1 {
+    background:
+    linear-gradient(#041e49dc,rgba(255, 255, 255, 0.063)),
+    url(media/concreto_armado.jpg) no-repeat;
+    background-position: center;
+    background-attachment: srcoll;
+    background-size: cover;
+}
+
+.sl1:hover {
+    background:
+    linear-gradient(#cd6824,rgba(255, 255, 255, 0.063)),
+    url(media/concreto_armado.jpg) no-repeat;
+    background-position: center;
+    background-attachment: srcoll;
+    background-size: cover;
+}
+
+.sl2 {
+    background:
+    linear-gradient(#041e49dc,rgba(255, 255, 255, 0.063)),
+    url(media/concreto_protendido.jpg) no-repeat;
+    background-position: center;
+    background-attachment: srcoll;
+    background-size: cover;
+}
+
+.sl2:hover {
+    background:
+    linear-gradient(#cd6824,rgba(255, 255, 255, 0.063)),
+    url(media/concreto_protendido.jpg) no-repeat;
+    background-position: center;
+    background-attachment: srcoll;
+    background-size: cover;
+}
+
+.sl3 {
+    background:
+    linear-gradient(#041e49dc,rgba(255, 255, 255, 0.063)),
+    url(media/alvenaria_estrutural.jpg) no-repeat;
+    background-position: center;
+    background-attachment: srcoll;
+    background-size: cover;
+}
+
+.sl3:hover {
+    background:
+    linear-gradient(#cd6824,rgba(255, 255, 255, 0.063)),
+    url(media/alvenaria_estrutural.jpg) no-repeat;
+    background-position: center;
+    background-attachment: srcoll;
+    background-size: cover;
+}
+
+.sl4 {
+    background:
+    linear-gradient(#041e49dc,rgba(255, 255, 255, 0.063)),
+    url(media/parede_concreto.jpg) no-repeat;
+    background-position: center;
+    background-attachment: srcoll;
+    background-size: cover;
+}
+
+.sl4:hover {
+    background:
+    linear-gradient(#cd6824,rgba(255, 255, 255, 0.063)),
+    url(media/parede_concreto.jpg) no-repeat;
+    background-position: center;
+    background-attachment: srcoll;
+    background-size: cover;
+}
+
+.sl1, .sl2, .sl3, .sl4 {
+    color: var(--cor5);
+    padding: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.245);
+}
+
+.solucoes a {
+    color: var(--cor5);
+    font-style: normal;
+    text-decoration: none;
+}
+/*Final do grid*/
+
+/*=====Final seção 3*/
+
+/*=====Seção 4 do site*/
+
+.sct_4 {
+    width: 100%;
+    height: 200px;
+    padding: 20px 100px 30px 100px;
+    margin: 0px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*Grid Seção 4*/
+.diferenciais{
+    width: 70%;
+    height: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.diferenciais h3 {
+    margin: 0px;
+    line-height: 2.3em;
+}
+
+.diferenciais div {
+    text-align: center;
+    margin: 0px auto;
+
+}
+
+.em2 {
+    font-size: 3.5em;
+    color: var(--cor0);
+}
+
+.em2:hover {
+    color: var(--cor4);
+}
+/*Final seção 4*/
+
+/*=====seção 5*/
+
+.sct_5 {
+    background:
+    linear-gradient(#041e49e0,#041e49e0),
+    url(media/QLTS-28.jpg) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ssct_51 {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.ssct_52 {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+
+#svg-map {
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+}
+
+.ssct_51 h2 {
+    position: absolute;
+    top: 30%;
+    margin-left: 100px;
+    font-size: 3em;
+    color: var(--cor2);
+}
+/*=====Final seção 5*/
+
+/*Rodapé*/
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: var(--cor0);
+    color: var(--cor2);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ft_1 {
+    width: 70%;
+    padding: 100px;
+    font-size: 0.75em;
+    color: var(--cor3);
+}
+
+.ft_1 img {
+    width: 150px;
+}
+
+.ft_2 {
+    width: 30%;
+    padding: 130px 0px;
+    font-size: 0.75em;
+    line-height: 10px;
+}
+
+
+.ft_2 h2 {
+    font-size: 2em;
+}
+
+.ft_2 h3 {
+    font-size: .9em;
+    color: var(--cor3);
+}
+
+
+.ft_2 a {
+    font-size: 1.2em;
+    color: var(--cor4);
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.final {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor1);
+    margin: 0px;
+
+}
+
+.final h4 {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    margin: auto;
+    font-size: 0.8em;
+    color: var(--cor2);
+    font-weight: lighter;
+    text-align: center;
+}
